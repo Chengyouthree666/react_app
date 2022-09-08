@@ -1,0 +1,7 @@
+/dist/
+/static/
+/test/unit/coverage/
+package.json
+!.eslintrc.js
+!.prettierrc.js
+node_modules/
