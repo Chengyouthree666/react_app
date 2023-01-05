@@ -1,24 +1,22 @@
-import React from 'react'
-import './App.css';
-import Home from './views/home'
-import Layout from './views/layout'
-import Login from './views/login'
-import { Routes, Switch, Route, Link } from 'react-router-dom'
+import React, {Suspense} from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { defaultRoutes } from './route';
+import JumpLoading from './components/jumpLoading';
 
 function App () {
   return (
-    <div>
-      <div className='links'>
-        <Link to="/">主页面</Link>
-        <Link to="/home">首页</Link>
-      </div>
+    <div id="app-container">
       <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Layout />} />
-        <Route path="/home" element={<Home />} />
+        {defaultRoutes.map((item) => <Route key={item.key} path={item.path} element={
+          <Suspense fallback={
+            <JumpLoading />
+          }>
+            <item.component />
+          </Suspense>
+        } />)}
       </Routes>
     </div>
-  )
+  );
 }
 
 export default App;

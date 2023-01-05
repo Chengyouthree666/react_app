@@ -10,17 +10,18 @@ module.exports  = {
     'plugin:react/recommended'
   ],
   'parserOptions': {
-    parser: '@babel/eslint-parser',
+    parser: 'babel-eslint',
     'requireConfigFile': false,
-    'ecmaVersion': 7,
+    'ecmaVersion': 2018,
+    'sourceType': 'module',
+    'extends': 'standard',
     // 开启实验属性
     'ecmaFeatures': {
       'experimentalObjectRestSpread': true,
       // 修饰器
       'experimentalDecorators': true,
       'jsx': true
-    },
-    'sourceType': 'module'
+    }
   },
   'plugins': [
     'react'
@@ -111,6 +112,7 @@ module.exports  = {
     // http://eslint.org/docs/rules/comma-style
     'comma-style': [2, 'last'],
     // "SwitchCase" (默认：0) 强制 switch 语句中的 case 子句的缩进水平
+    'SwitchCase': 0,
     // 以方括号取对象属性时，[ 后面和 ] 前面是否需要空格, 可选参数 never, always
     'computed-property-spacing': [2, 'never'],
     // 用于指统一在回调函数中指向this的变量名，箭头函数中的this已经可以指向外层调用者，应该没卵用了
@@ -121,7 +123,8 @@ module.exports  = {
     // 文件末尾强制换行
     'eol-last': 2,
     'indent': [
-      'error', 2
+      'error', 2,
+      { 'SwitchCase': 1 }
     ],
     // 要求或禁止在函数标识符和其调用之间有空格
     'func-call-spacing': 2,
@@ -201,7 +204,7 @@ module.exports  = {
     // 禁止使用特定的语法
     'no-restricted-syntax': 0,
     // 禁止 function 标识符和括号之间出现空格
-    'no-spaced-func': 2,
+    'no-spaced-func': 0,
     // 不允许使用三元操作符
     'no-ternary': 0,
     // 禁用行尾空格
@@ -232,7 +235,7 @@ module.exports  = {
     // 要求使用 JSDoc 注释
     'require-jsdoc': 0,
     // 要求或禁止使用分号而不是 ASI（这个才是控制行尾部分号的，）
-    // "semi": [2, "always"],
+    'semi': [2, 'always'],
     // 强制分号之前和之后使用一致的空格
     'semi-spacing': 2,
     // 要求同一个声明块中的变量按顺序排列
@@ -240,7 +243,7 @@ module.exports  = {
     // 强制在块之前使用一致的空格
     'space-before-blocks': [2, 'always'],
     // 强制在 function的左括号之前使用一致的空格
-    'space-before-function-paren': [2, 'always'],
+    'space-before-function-paren': [0, 'always'],
     // 强制在圆括号内使用一致的空格
     'space-in-parens': [2, 'never'],
     // 要求操作符周围有空格
@@ -375,4 +378,4 @@ module.exports  = {
     // 禁止未使用的变量
     'no-unused-vars': 0,
   }
-}
+};

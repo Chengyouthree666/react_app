@@ -1,0 +1,73 @@
+
+@keyframes circle {
+  0% {}
+  100% {
+    transform: rotate(360deg);
+
+  }
+}
+.layout-header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(to bottom,  rgba(14,145,131, .5), #fff);
+}
+
+.layout-header .header-logo {
+  width: 100px;
+}
+
+.layout-header .header-logo .logo {
+  // //改为redux控制动画效果
+  // animation: circle 5s linear infinite;
+}
+
+.layout-header .menu-list {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  padding-left: 50px;
+}
+
+.layout-header .menu-list .menu-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+  margin-left: 10px;
+  height: 35px;
+  line-height: 32px;
+  padding: 0 10px;
+  background-color: #fff;
+  background-image: linear-gradient(to left bottom, rgb(125, 14, 236),rgb(236, 14, 99));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  user-select: none;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  transition: line-height 0.1s ease-in;
+  &:hover {
+    line-height: 28px;
+  }
+}
+
+
+.layout-main-view {
+  position: absolute;
+  top:80px;
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  box-sizing: border-box;
+  // background-color: skyblue;
+}
