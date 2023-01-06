@@ -12,6 +12,7 @@ import JumpLoading from '@/components/jumpLoading';
 const menuItems = [
   { key: 'home', name: 'home', path: 'home' },
   { key: 'formily', name: 'formily', path: 'formily' },
+  { key: 'proCom', name: 'proCom', path: 'proCom' },
   { key: 'login', name: 'login', path: 'login' },
 ];
 

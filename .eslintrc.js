@@ -10,7 +10,7 @@ module.exports  = {
     'plugin:react/recommended'
   ],
   'parserOptions': {
-    parser: 'babel-eslint',
+    'parser': '@babel/eslint-parser',
     'requireConfigFile': false,
     'ecmaVersion': 2018,
     'sourceType': 'module',

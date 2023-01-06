@@ -1,6 +1,7 @@
-import { lazy } from 'react'
+import { lazy } from 'react';
 
-const load = (path) => lazy(() => import(`../views/${path}`))
+const load = (path) => lazy(() => import(`../views/${path}`));
+
 // const Home = lazy(import('../views/home'))
 
 // export const dynamicRoutes = [
@@ -12,11 +13,12 @@ const load = (path) => lazy(() => import(`../views/${path}`))
 export const defaultRoutes = [
   { key: 'login', path: '/login', component: load('login') },
   { key: 'layout', path: '/*', component: load('layout')},
-]
+];
 
 export const dynamicRoutes = [
   { key: 'default', path: '/', component: load('home')},
   { key: 'home', path: '/home', component: load('home') },
   { key: 'formily', path: '/formily', component: load('formily') },
+  { key: 'proCom', path: '/proCom', component: load('proCom') },
   // { key: 'login', path: '/login', component: load('login') },
-]
+];

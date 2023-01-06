@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { message } from 'antd';
 
 const initialState = {
   logoCircleSpeed: 3,
@@ -14,7 +13,7 @@ const commonSlice = createSlice({
     },
     setLogoCircleSpeed: (state, action) => {
       if (typeof action.payload !== 'number' && action.payload < 0) {
-        return message.warn('invalid payload for logoCircleSpeed');
+        throw new Error('【store】invalid payload for logoCircleSpeed');
       }
       state.logoCircleSpeed = action.payload;
     }

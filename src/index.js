@@ -5,6 +5,9 @@ import './style/index.scss';
 // import 'antd/dist/antd.css';
 // 版本问题
 import 'antd/dist/antd.min.css';
+// 引入@formily/antd样式
+import '@formily/antd/dist/antd.css';
+
 import App from './App';
 
 // // store
