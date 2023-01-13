@@ -20,5 +20,6 @@ export const dynamicRoutes = [
   { key: 'home', path: '/home', component: load('home') },
   { key: 'formily', path: '/formily', component: load('formily') },
   { key: 'proCom', path: '/proCom', component: load('proCom') },
+  { key: '_component', path: '/_component', component: load('_component') },
   // { key: 'login', path: '/login', component: load('login') },
 ];

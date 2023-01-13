@@ -188,6 +188,18 @@ module.exports = function (webpackEnv) {
 
   return {
     target: ['browserslist'],
+    devServer: {
+      client: {
+        logging: 'info',
+      },
+      proxy: {
+        // '/api': {
+        //   target: 'http://localhost:3000',
+        //   pathRewrite: { '^/api': '' },
+        //   logLevel: 'debug',
+        // },
+      },
+    },
     // Webpack noise constrained to errors and warnings
     stats: 'errors-warnings',
     mode: isEnvProduction ? 'production' : isEnvDevelopment && 'development',

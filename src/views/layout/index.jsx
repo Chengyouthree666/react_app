@@ -13,6 +13,7 @@ const menuItems = [
   { key: 'home', name: 'home', path: 'home' },
   { key: 'formily', name: 'formily', path: 'formily' },
   { key: 'proCom', name: 'proCom', path: 'proCom' },
+  { key: '_component', name: '_component', path: '_component' },
   { key: 'login', name: 'login', path: 'login' },
 ];
 

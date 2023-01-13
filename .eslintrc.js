@@ -12,7 +12,7 @@ module.exports  = {
   'parserOptions': {
     'parser': '@babel/eslint-parser',
     'requireConfigFile': false,
-    'ecmaVersion': 2018,
+    'ecmaVersion': 2020,
     'sourceType': 'module',
     'extends': 'standard',
     // 开启实验属性

@@ -1,0 +1,12 @@
+.colorful-text {
+  display: inline-block;
+  text-align: center;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right,
+      rgb(93, 8, 130),
+      rgb(238, 6, 91),
+    );
+  font-weight: 700;
+}
