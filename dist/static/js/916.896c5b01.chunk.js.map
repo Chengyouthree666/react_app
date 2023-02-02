@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/916.896c5b01.chunk.js","mappings":"0JAEe,SAASA,IACtB,OACE,uBAAKC,UAAU,cAAa,2BAIhC,C","sources":["views/login/index.jsx"],"sourcesContent":["import React from 'react';\r\n\r\nexport default function Login() {\r\n  return (\r\n    <div className='login-warp'>\r\n      登陆页面\r\n    </div>\r\n  );\r\n}\r\n"],"names":["Login","className"],"sourceRoot":""}

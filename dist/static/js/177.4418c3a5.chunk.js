@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[177],{7177:function(e,t,l){l.r(t);var n=l(4519),a=l(9332);t.default=function(){return n.createElement("div",null,n.createElement("h1",null,"Social Profiles"),n.createElement(a.J9,{initialValues:{social:{facebook:"",twitter:""}},onSubmit:function(e){console.log(e)}},n.createElement(a.l0,null,n.createElement(a.gN,{name:"social.facebook"}),n.createElement(a.gN,{name:"social.twitter"}),n.createElement("button",{type:"submit"},"Submit"))))}}}]);
+//# sourceMappingURL=177.4418c3a5.chunk.js.map

@@ -4,13 +4,17 @@ import { message, Button } from 'antd';
 
 class SubClass extends Component {
   constructor(props) {
+    // // 此处不穿props，react会将props赋予实例，因此有无constructor都可访问到this.props
+    // // 但不建议省略super中的props，这会引发props在constructor完成前访问undefined的情况，不符合逻辑
     super(props);
 
+    // // 类组件：构造函数中初始化state
     this.state = {
       statusText: '组件初始未加载...',
       // onceUpdate: false
     };
 
+    // // 方法this绑定,render模板中访问this【组件实例】
     this.setStatusText = this.setStatusText.bind(this);
     // this.setOnceUpdate = this.setOnceUpdate.bind(this);
   }
@@ -77,7 +81,7 @@ class SubClass extends Component {
           style={{
             fontSize: `${(14 + count) > 25 ? 25 : (14 + count)}px`
           }}>{statusText}</span>
-        <Button onClick={() => resetCount()}>重置父组件的计数器</Button>
+        <Button onClick={resetCount}>重置父组件的计数器</Button>
       </div>
     );
   }

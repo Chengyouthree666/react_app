@@ -1,5 +1,5 @@
 import React, { useState, lazy, Suspense } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Link, Redirect } from 'react-router-dom';
 import {
 } from 'antd';
 import { dynamicRoutes } from '@/route';
@@ -14,9 +14,9 @@ const menuItems = [
   { key: 'formily', name: 'formily', path: 'formily' },
   { key: 'proCom', name: 'proCom', path: 'proCom' },
   { key: '_component', name: '_component', path: '_component' },
+  { key: 'formik', name: 'formik', path: 'formik' },
   { key: 'login', name: 'login', path: 'login' },
 ];
-
 
 export default function AppLayout() {
 
