@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[557],{4557:function(e,t,n){n.r(t);var c=n(4519);t.default=function(){return c.createElement("div",{className:"pro-components-demo"},c.createElement("h2",{style:{textAlign:"center"}},"procomponents demo \u3010TODO: \u7248\u672c\u95ee\u9898\u3011"))}}}]);
-//# sourceMappingURL=557.50941273.chunk.js.map
